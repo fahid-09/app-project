@@ -1,0 +1,81 @@
+.nav h1 {
+    color: blueviolet;
+    margin: 0;
+    font-size: 40px;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.nav input {
+    flex: 1;
+    height: 45px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-right: none;
+    padding: 4px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid blueviolet;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.nav-search {
+    display: flex;
+    flex: 1;
+    margin: 0 30px 0 30px;
+}
+
+.nav button {
+    height: 45px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    border-left: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.suggested-result {
+    position: absolute;
+    display: list-item !important;
+    /* flex-direction: column; */
+    top: 45px;
+    /* margin-left: 0px; */
+    background: #f1f0f0;
+    width: 200px;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+.suggested-result li {
+    border-bottom: 1px solid #d1c9c9;
+    padding: 5px;
+}
+
+.suggested-result li a {
+    cursor: pointer;
+    color: blueviolet;
+}
+ul li {
+    cursor: pointer;
+}

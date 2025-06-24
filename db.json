@@ -1,0 +1,146 @@
+{
+  "seller": [
+    {
+      "id": "076d",
+      "name": "Ayesha Zaman",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "fahad123"
+    },
+    {
+      "id": "fa56",
+      "name": "vafeci1689",
+      "email": "contact@hiline.pk",
+      "password": "111222"
+    },
+    {
+      "id": "36c6",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "726c",
+      "name": "vafeci1689",
+      "email": "vafeci1689",
+      "password": "vafeci1689"
+    },
+    {
+      "id": "9f8b",
+      "name": "Fahad",
+      "email": "fahad@gmail.com",
+      "password": "Fahad123321"
+    },
+    {
+      "id": "802a",
+      "name": "AyeshaZaman",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "777"
+    },
+    {
+      "id": "4d0c",
+      "name": "vafeci1689",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "wrfrwfw"
+    },
+    {
+      "id": "5f54",
+      "name": "shamas ul haq",
+      "email": "shamas@gmail.com",
+      "password": "shamas123"
+    }
+  ],
+  "product": [
+    {
+      "name": "Samsung",
+      "price": "12301",
+      "color": "Green",
+      "category": "mobile",
+      "description": "ddss",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740",
+      "id": "d027"
+    },
+    {
+      "name": "Huawie",
+      "price": "306",
+      "color": "Black",
+      "category": "mobile",
+      "description": "mobile",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D",
+      "id": "1264"
+    },
+    {
+      "name": "Dell laptop",
+      "price": "123000",
+      "color": "white",
+      "category": "laptop",
+      "description": "laptop",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740",
+      "id": "5dea"
+    },
+    {
+      "name": "Oppo 13F",
+      "price": "79999",
+      "color": "Purple",
+      "category": "mobile",
+      "description": "mobile",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D",
+      "id": "3565"
+    }
+  ],
+  "user": [
+    {
+      "id": "fd5a",
+      "name": "Arslan",
+      "email": "arslan@user.com",
+      "password": "112233"
+    },
+    {
+      "id": "db3b",
+      "name": "Adnan",
+      "email": "adnan@user.com",
+      "password": "112233"
+    },
+    {
+      "id": "33c3",
+      "name": "Noman",
+      "email": "nomi@user.com",
+      "password": "112233"
+    },
+    {
+      "id": "901c",
+      "name": "shamas ul haq",
+      "email": "shamas@user.com",
+      "password": "112233"
+    },
+    {
+      "id": "66c2",
+      "name": "babar",
+      "email": "babar@user.com",
+      "password": "112233"
+    },
+    {
+      "id": "dd0d",
+      "name": "Ayesha Zaman",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "5ee5",
+      "name": "Ayesha Zaman",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "5b1d",
+      "name": "Hiline International",
+      "email": "ayesha.zaman2112@gmail.com",
+      "password": "112233"
+    },
+    {
+      "id": "6338",
+      "name": "Hiline International",
+      "email": "contact@hiline.pk",
+      "password": "wwe"
+    }
+  ]
+}

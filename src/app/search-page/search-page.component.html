@@ -1,0 +1,13 @@
+<!-- <h2 style="color: red; text-align: center; display: flex; justify-content: center; align-items: center; height: 500px;">{{noResultFound}}</h2> -->
+
+<div class="row search-item" *ngFor="let item of searchresults">
+    <div class="col-sm-3">
+      <a routerLink="/view-product/{{item.id}}"><img class="search-image" src="{{item.image}}" /></a>  
+    </div>
+    <div class="col-sm-8">
+       <a routerLink="/view-product/{{item.id}}"><h5>{{item.name}}</h5></a> 
+        <p>{{item.price}}</p>
+        <span>color: {{item.color}}</span><br><span>category: {{item.category}}</span>
+        <p>{{item.description}}</p>
+    </div>
+</div>

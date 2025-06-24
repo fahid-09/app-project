@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm-6">
+        <img class="product-img" src="{{productdetails?.image}}" />
+        <hr />
+        <img class="product-img-related" src="{{productdetails?.image}}" />
+        <img class="product-img-related" src="{{productdetails?.image}}" />
+        <img class="product-img-related" src="{{productdetails?.image}}" />
+        <img class="product-img-related" src="{{productdetails?.image}}" />
+        <img class="product-img-related" src="{{productdetails?.image}}" />
+
+
+    </div>
+    <div class="col-sm-6">
+        <div>
+            <h3>{{productdetails?.name}}</h3>
+        </div>
+        <div>
+            <h5>{{productdetails?.description}}</h5>
+        </div>
+        color:
+        <div class="item-color" [style.backgroundColor]="productdetails?.color">
+            <!-- {{productdetails?.color}} -->
+        </div>
+        <div class="size-btn">
+            size:
+            <span><button>Small</button></span>
+            <span><button>Medium</button></span>
+            <span><button>Large</button></span>
+        </div>
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+        <div class="quantity-group">
+            <button (click)="handelQuantity('min')">-</button>
+            <input type="text" value="{{productQuantity}}">
+            <button (click)="handelQuantity('add')">+</button>
+        </div>
+
+    </div>
+</div>

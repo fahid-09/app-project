@@ -1,0 +1,22 @@
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+     margin: 0px;
+    height: 50px;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ddd;
+    color: blueviolet;
+    text-align: center;
+}
+   

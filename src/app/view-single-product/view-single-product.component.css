@@ -1,0 +1,19 @@
+.product-img{
+    height: 500px;
+}
+.product-img-related{
+    width: 100px;
+    height: 100px;
+}
+.size-btn{
+    padding-bottom: 10px;
+}
+.size-btn span{
+    padding-right: 10px;
+}
+.item-color{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

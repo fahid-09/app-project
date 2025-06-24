@@ -1,0 +1,32 @@
+.signup,
+.login {
+    text-align: center;
+    color: blueviolet;
+}
+
+.openForm {
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-error-name {
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 15px;
+    color: red !important;
+}
+
+.form-error-email {
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 75px;
+    color: red !important;
+}
+
+.form-error-password {
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 133px;
+    color: red;
+}
