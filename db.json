@@ -89,58 +89,10 @@
   ],
   "user": [
     {
-      "id": "fd5a",
-      "name": "Arslan",
-      "email": "arslan@user.com",
+      "id": "3cf1",
+      "name": "fahad",
+      "email": "fahad@user.com",
       "password": "112233"
-    },
-    {
-      "id": "db3b",
-      "name": "Adnan",
-      "email": "adnan@user.com",
-      "password": "112233"
-    },
-    {
-      "id": "33c3",
-      "name": "Noman",
-      "email": "nomi@user.com",
-      "password": "112233"
-    },
-    {
-      "id": "901c",
-      "name": "shamas ul haq",
-      "email": "shamas@user.com",
-      "password": "112233"
-    },
-    {
-      "id": "66c2",
-      "name": "babar",
-      "email": "babar@user.com",
-      "password": "112233"
-    },
-    {
-      "id": "dd0d",
-      "name": "Ayesha Zaman",
-      "email": "ayesha.zaman2112@gmail.com",
-      "password": "112233"
-    },
-    {
-      "id": "5ee5",
-      "name": "Ayesha Zaman",
-      "email": "ayesha.zaman2112@gmail.com",
-      "password": "112233"
-    },
-    {
-      "id": "5b1d",
-      "name": "Hiline International",
-      "email": "ayesha.zaman2112@gmail.com",
-      "password": "112233"
-    },
-    {
-      "id": "6338",
-      "name": "Hiline International",
-      "email": "contact@hiline.pk",
-      "password": "wwe"
     }
   ]
 }

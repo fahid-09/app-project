@@ -30,42 +30,44 @@ export class HeaderComponent {
           let userdata = userStore && JSON.parse(userStore);
           this.userName = userdata.name;
           this.menuType = "user";
+        }
+        else {
+          this.menuType = "default";
+        }
       }
-      else {
-        this.menuType = "default";
-      }
-    }
-  });
-}
-
-sellerLogout() {
-  localStorage.removeItem('seller');
-  this.router.navigate(['/'])
-}
-searchproduct(query: KeyboardEvent) {
-  if (query) {
-    const element = query.target as HTMLInputElement;
-    this.productService.searchProducts(element.value).subscribe((result) => {
-      if (result)
-        this.searchResult = result
-
-    })
+    });
   }
-}
-hideSearchResult() {
-  this.searchResult = undefined;
-}
 
-submitSearch(val: string) {
-  this.router.navigate([`search/${val}`])
-}
-redirectToDetails(id: string) {
-  console.log(id)
-  this.router.navigate(['/view-product/' + id])
-}
+  sellerLogout() {
+    localStorage.removeItem('seller');
+    this.router.navigate(['/'])
+  }
+  searchproduct(query: KeyboardEvent) {
+    if (query) {
+      const element = query.target as HTMLInputElement;
+      this.productService.searchProducts(element.value).subscribe((result) => {
+        if (result)
+          this.searchResult = result
 
-logOutUser(){
-  localStorage.removeItem('user');
-  this.router.navigate(['/user-auth'])
-}
+      })
+    }
+  }
+  hideSearchResult() {
+    this.searchResult = undefined;
+  }
+
+  submitSearch(val: string) {
+    this.router.navigate([`search/${val}`])
+  }
+  redirectToDetails(id: string) {
+    console.log(id)
+    this.router.navigate(['/view-product/' + id])
+  }
+
+  logOutUser() {
+      localStorage.removeItem('user');
+      this.router.navigate(['/user-auth'])
+    
+
+  }
 }

@@ -1,4 +1,11 @@
-.user-auth{
+/* .user-auth{
     text-align: center;
+    color: blueviolet;
+} */
+.user-signup, .user-login a {
+cursor: pointer;
+}
+.user-signup, .user-login h1 {
+text-align: center;
     color: blueviolet;
 }

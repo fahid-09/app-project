@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { signUp } from '../data-type';
+import { login, signUp } from '../data-type';
 import { UserService } from '../services/user.service';
 import { NgForm } from '@angular/forms';
 
@@ -10,13 +10,22 @@ import { NgForm } from '@angular/forms';
 })
 export class UserAuthComponent {
   constructor(private userService: UserService) {
-
   }
+
+  userLogedIn: boolean = false;
   ngOnInit(): void {
     this.userService.userAuthReload();
   }
-  submitUser(data: signUp, form: NgForm) {
-    this.userService.addUser(data);
+  signupUser(signupData: signUp, form: NgForm) {
+    this.userService.addUser(signupData);
     form.reset();
+  }
+  submitUserLogin(loginData: login) {
+    // console.log("user login data is", loginData)
+    this.userService.logInUser(loginData)
+  }
+
+  openLoginSignupForm() {
+    this.userLogedIn = !this.userLogedIn;
   }
 }
