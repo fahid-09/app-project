@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { addProduct } from '../data-type';
+import { Product } from '../data-type';
 import { SellerService } from '../services/seller.service';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
@@ -14,7 +14,7 @@ export class SellerAddProductComponent {
   constructor(private productService: ProductService, private router: Router) { }
   addproductMessage: string | undefined;
 
-  addProduct(data: addProduct, form: NgForm) {
+  addProduct(data: Product, form: NgForm) {
     this.productService.addSellerProduct(data).subscribe((result) => {
       if (result) {
         this.addproductMessage = "Product added successfuly";

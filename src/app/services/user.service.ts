@@ -26,14 +26,6 @@ export class UserService {
           localStorage.setItem('user', JSON.stringify(result.body[0]));
         this.router.navigate(['/'])
         }
-        // if (result && result.body) {
-        //   localStorage.setItem('user', JSON.stringify(result.body[0]));
-        //   this.router.navigate(['/'])
-        // }
-        // else {
-        //   console.log("not found");
-
-        // }
       })
   }
   userAuthReload() {

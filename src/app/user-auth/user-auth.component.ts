@@ -21,7 +21,6 @@ export class UserAuthComponent {
     form.reset();
   }
   submitUserLogin(loginData: login) {
-    // console.log("user login data is", loginData)
     this.userService.logInUser(loginData)
   }
 

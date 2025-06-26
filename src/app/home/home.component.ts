@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../services/product.service';
-import { addProduct } from '../data-type';
+import { Product } from '../data-type';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent {
 
   icon = faEye
-  popularData: undefined | addProduct[];
-  allProducts: undefined | addProduct[];
+  popularData: undefined | Product[];
+  allProducts: undefined | Product[];
   constructor(private productService: ProductService) {
 
   }

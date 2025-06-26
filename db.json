@@ -85,6 +85,15 @@
       "description": "mobile",
       "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D",
       "id": "3565"
+    },
+    {
+      "id": "d82a",
+      "name": "Nimco Mix",
+      "price": "200",
+      "color": "red",
+      "category": "nimco",
+      "description": "Nimco Mix",
+      "image": "https://cliftonnimco.com/wp-content/uploads/2018/04/Mix-Nimco-400x400.jpg"
     }
   ],
   "user": [

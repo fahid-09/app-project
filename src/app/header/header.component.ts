@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SellerService } from '../services/seller.service';
 import { ProductService } from '../services/product.service';
-import { addProduct } from '../data-type';
+import { Product } from '../data-type';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +13,8 @@ export class HeaderComponent {
   menuType: string = "default";
   sellerName: string = "";
   userName: string = "";
-  searchResult: undefined | addProduct[]
+  searchResult: undefined | Product[];
+  cartItems = 0;
   constructor(private router: Router, private sellerService: SellerService, private productService: ProductService) { }
   ngOnInit() {
     // check the url 
@@ -36,6 +37,17 @@ export class HeaderComponent {
         }
       }
     });
+    let cartdata =  localStorage.getItem('localCart');
+    if(cartdata){
+      this.cartItems = JSON.parse(cartdata).length;
+    }
+
+    // jb hum add to cart kry to direct quantity change ho;
+
+    this.productService.cartdata.subscribe((item)=>{
+      this.cartItems = item.length;
+    })
+   
   }
 
   sellerLogout() {

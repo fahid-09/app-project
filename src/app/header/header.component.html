@@ -12,7 +12,7 @@
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="seller-auth">Seller</a></li>
         <li><a routerLink="user-auth">SIgnUp/Login</a></li>
-        <li><a href="#">cart(0)</a></li>
+        <li><a href="#">cart({{cartItems}})</a></li>
 
     </ul>
      <ul *ngSwitchCase="'seller'">

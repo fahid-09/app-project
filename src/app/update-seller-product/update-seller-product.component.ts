@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { addProduct } from '../data-type';
+import { Product } from '../data-type';
 
 @Component({
   selector: 'app-update-seller-product',
@@ -9,7 +9,7 @@ import { addProduct } from '../data-type';
   styleUrls: ['./update-seller-product.component.css']
 })
 export class UpdateSellerProductComponent {
-  productData: undefined | addProduct;
+  productData: undefined | Product;
   productMessage: undefined | string;
   constructor(private route: ActivatedRoute, private router: Router,  private productService: ProductService) { }
   ngOnInit(id: number) {
@@ -20,7 +20,7 @@ export class UpdateSellerProductComponent {
       this.productData = data
     })
   }
-  updateProduct(data: addProduct) {
+  updateProduct(data: Product) {
     if (this.productData) {
       data.id = this.productData.id
     }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { addProduct } from '../data-type';
+import { Product } from '../data-type';
 
 @Component({
   selector: 'app-search-page',
@@ -11,7 +11,7 @@ import { addProduct } from '../data-type';
 export class SearchPageComponent {
   constructor(private activeRoute: ActivatedRoute, private productService: ProductService) {
   }
-  searchresults: undefined | addProduct[]
+  searchresults: undefined | Product[]
   noResultFound = "";
   ngOnInit(): void {
     let productQuery = this.activeRoute.snapshot.paramMap.get('query');
