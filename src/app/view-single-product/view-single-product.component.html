@@ -7,8 +7,6 @@
         <img class="product-img-related" src="{{productdetails?.image}}" />
         <img class="product-img-related" src="{{productdetails?.image}}" />
         <img class="product-img-related" src="{{productdetails?.image}}" />
-
-
     </div>
     <div class="col-sm-6">
         <div>
@@ -29,7 +27,7 @@
         </div>
         <button *ngIf="!removeCart" (click)="addToCart()">Add to Cart</button>
         <button>Buy Now</button>
-        <button *ngIf="removeCart" (click)="removeToCart(productdetails?.id)">Remove cart</button>
+        <button *ngIf="removeCart" (click)="removeToCart()">Remove Cart</button>
 
         <div class="quantity-group">
             <button (click)="handelQuantity('min')">-</button>

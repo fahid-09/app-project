@@ -33,10 +33,7 @@ export class ViewSingleProductComponent {
         else{
           this.removeCart = false;
         }
-
-
       }
-
     })
   }
   handelQuantity(value: string) {
@@ -44,7 +41,6 @@ export class ViewSingleProductComponent {
       this.productQuantity += 1;
     } else if (value == 'min' && this.productQuantity > 1) {
       this.productQuantity -= 1;
-
     }
   }
   addToCart() {
@@ -54,10 +50,9 @@ export class ViewSingleProductComponent {
       if (!localStorage.getItem('user')) {
         this.productService.localAddToCart(this.productdetails)
       }
-
     }
   }
-  removeToCart(productId: any) {
+  removeToCart() {
 
   }
 }
