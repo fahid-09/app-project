@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
-import { faTrash, faPen, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faPen, faEye, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -18,6 +18,9 @@ export class SellerHomeComponent {
   icon = faTrash;
   editIcon = faPen;
   viewIcon = faEye;
+  // heartIcon = faHeart;
+
+  // isLiked : boolean = false;
 
   ngOnInit() {
     this.AllProductList();

@@ -27,12 +27,13 @@
         </div>
         <button *ngIf="!removeCart" (click)="addToCart()">Add to Cart</button>
         <button>Buy Now</button>
-        <button *ngIf="removeCart" (click)="removeToCart()">Remove Cart</button>
+        <button *ngIf="removeCart" (click)="removeToCart(productdetails?.id)">Remove Cart</button>
 
         <div class="quantity-group">
             <button (click)="handelQuantity('min')">-</button>
             <input type="text" value="{{productQuantity}}">
             <button (click)="handelQuantity('add')">+</button>
+
         </div>
 
     </div>
