@@ -14,7 +14,7 @@ export class SellerAuthComponent {
   authError = "";
 
   ngOnInit(): void {
-    this.sellerservice.sellerReload()
+    this.sellerservice.sellerReload();
   }
   signUp(data: signUp): void {
     // console.log(data)

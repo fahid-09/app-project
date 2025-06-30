@@ -1,52 +1,40 @@
 {
   "seller": [
     {
-      "id": "076d",
+      "id": "e004",
+      "name": "Fahad",
+      "email": "fahad@seller.com",
+      "password": "112233"
+    },
+    {
+      "id": "0ee7",
+      "name": "Shamas",
+      "email": "shamas@seller.com",
+      "password": "112233"
+    },
+    {
+      "id": "96ff",
+      "name": "arslan",
+      "email": "arslan@seller.com",
+      "password": "112233"
+    },
+    {
+      "id": "66ef",
       "name": "Ayesha Zaman",
       "email": "ayesha.zaman2112@gmail.com",
-      "password": "fahad123"
+      "password": "112233"
     },
     {
-      "id": "fa56",
-      "name": "vafeci1689",
+      "id": "3ba4",
+      "name": "Hiline International",
       "email": "contact@hiline.pk",
-      "password": "111222"
+      "password": "112233"
     },
     {
-      "id": "36c6",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "726c",
-      "name": "vafeci1689",
-      "email": "vafeci1689",
-      "password": "vafeci1689"
-    },
-    {
-      "id": "9f8b",
-      "name": "Fahad",
-      "email": "fahad@gmail.com",
-      "password": "Fahad123321"
-    },
-    {
-      "id": "802a",
-      "name": "AyeshaZaman",
-      "email": "ayesha.zaman2112@gmail.com",
-      "password": "777"
-    },
-    {
-      "id": "4d0c",
-      "name": "vafeci1689",
-      "email": "ayesha.zaman2112@gmail.com",
-      "password": "wrfrwfw"
-    },
-    {
-      "id": "5f54",
-      "name": "shamas ul haq",
-      "email": "shamas@gmail.com",
-      "password": "shamas123"
+      "id": "871a",
+      "name": "adnan",
+      "email": "adnan@seller.com",
+      "password": "112233"
     }
   ],
   "product": [

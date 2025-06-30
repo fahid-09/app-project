@@ -22,8 +22,9 @@ export class HeaderComponent {
       if (value.url) {
         if (localStorage.getItem('seller') && value.url.includes('seller')) {
           let sellerStore = localStorage.getItem('seller');
-          let sellerData = sellerStore && JSON.parse(sellerStore)[0]
+          let sellerData = sellerStore && JSON.parse(sellerStore)[0];
           this.sellerName = sellerData.name;
+
           this.menuType = "seller";
         }
         else if (localStorage.getItem('user')) {
@@ -37,17 +38,17 @@ export class HeaderComponent {
         }
       }
     });
-    let cartdata =  localStorage.getItem('localCart');
-    if(cartdata){
+    let cartdata = localStorage.getItem('localCart');
+    if (cartdata) {
       this.cartItems = JSON.parse(cartdata).length;
     }
 
     // jb hum add to cart kry to direct quantity change ho;
 
-    this.productService.cartdata.subscribe((item)=>{
+    this.productService.cartdata.subscribe((item) => {
       this.cartItems = item.length;
     })
-   
+
   }
 
   sellerLogout() {
@@ -77,9 +78,9 @@ export class HeaderComponent {
   }
 
   logOutUser() {
-      localStorage.removeItem('user');
-      this.router.navigate(['/user-auth'])
-    
+    localStorage.removeItem('user');
+    this.router.navigate(['/user-auth'])
+
 
   }
 }
