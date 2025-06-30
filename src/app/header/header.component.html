@@ -27,7 +27,7 @@
         <!-- <li><a routerLink="seller-auth">Seller</a></li> -->
         <li><a routerLink="/">{{userName | titlecase}}</a></li>
         <li><a (click)="logOutUser()">Logout</a></li>
-        <li><a href="#">cart(0)</a></li>
+        <li><a href="#">cart({{cartItems}})</a></li>
 
     </ul>
 </div>

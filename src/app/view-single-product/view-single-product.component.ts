@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../services/product.service';
-import { Product } from '../data-type';
+import { cart, Product } from '../data-type';
 import { ActivatedRoute } from '@angular/router';
+import { JsonpInterceptor } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-view-single-product',
@@ -47,10 +49,27 @@ export class ViewSingleProductComponent {
     if (this.productdetails) {
       this.productdetails.quantity = this.productQuantity
       if (!localStorage.getItem('user')) {
-        this.productService.localAddToCart(this.productdetails)
+        this.productService.localAddToCart(this.productdetails);
+        this.removeCart = true;
+      } else {
+        // console.log("user is logged in ");
+        let user = localStorage.getItem('user');
+        // console.log(user);
+        let userId = user && JSON.parse(user).id;
+        // console.log(userId);
+        let cartData: cart = {
+          ...this.productdetails, userId, productId: this.productdetails.id
+        }
+        delete cartData.id;
+        // console.log(cartData);
+        this.productService.addToCart(cartData).subscribe((result) => {
+          console.log(result);
+
+        })
+
+
       }
     }
-    this.removeCart = true;
 
   }
   removeToCart(id: any) {

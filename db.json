@@ -103,5 +103,43 @@
       "email": "fahad@user.com",
       "password": "112233"
     }
+  ],
+  "cart": [
+    {
+      "id": "53aa",
+      "name": "Dell laptop",
+      "price": "123000",
+      "color": "white",
+      "category": "laptop",
+      "description": "laptop",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740",
+      "quantity": 1,
+      "userId": "3cf1",
+      "productId": "5dea"
+    },
+    {
+      "id": "349c",
+      "name": "Dell laptop",
+      "price": "123000",
+      "color": "white",
+      "category": "laptop",
+      "description": "laptop",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740",
+      "quantity": 1,
+      "userId": "3cf1",
+      "productId": "5dea"
+    },
+    {
+      "id": "f08a",
+      "name": "Dell laptop",
+      "price": "123000",
+      "color": "white",
+      "category": "laptop",
+      "description": "laptop",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740",
+      "quantity": 3,
+      "userId": "3cf1",
+      "productId": "5dea"
+    }
   ]
 }
