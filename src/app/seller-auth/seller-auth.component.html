@@ -8,8 +8,10 @@
             <input required [ngModel] #email="ngModel" class="form-input" type="text" ngModel name="email"
                 placeholder="enter email">
             <span class="form-error-email" *ngIf="email.invalid && email.touched">**</span>
-            <input required [ngModel] #password="ngModel" class="form-input" type="text" ngModel name="password"
-                placeholder="enter password">
+            <input required [ngModel] #password="ngModel" class="form-input" [type]="hidePassword ? 'password' : 'text'"
+                ngModel name="password" placeholder="enter password">
+            <a (click)="hideShowPassword()"><fa-icon  *ngIf="hidePassword" [icon]="icon" class="eye-icon"></fa-icon></a>
+            <a (click)="hideShowPassword()"><fa-icon *ngIf="!hidePassword" [icon]="hiddenEye" class="eye-icon"></fa-icon></a>
             <span class="form-error-password " *ngIf="password.invalid && password.touched">**</span>
             <button class="form-button" [disabled]="sellerSignUp.invalid">Sign Up</button>
             <a class="openForm" (click)="openLoginSignupForm()">Already Have an Account? Login</a>

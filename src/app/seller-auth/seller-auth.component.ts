@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
 import { login, signUp } from '../data-type';
+import {  faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-seller-auth',
   templateUrl: './seller-auth.component.html',
@@ -12,6 +14,9 @@ export class SellerAuthComponent {
   constructor(private sellerservice: SellerService, private router: Router) { }
   showLogin = false;
   authError = "";
+  icon = faEye;
+  hiddenEye = faEyeSlash;
+  hidePassword: boolean = false;
 
   ngOnInit(): void {
     this.sellerservice.sellerReload();
@@ -37,5 +42,8 @@ export class SellerAuthComponent {
         this.authError = "email or password is incorrect"
       }
     })
+  }
+  hideShowPassword(){
+    this.hidePassword = !this.hidePassword;
   }
 }

@@ -30,3 +30,10 @@
     margin-top: 133px;
     color: red;
 }
+.eye-icon{
+    position: absolute;
+    left: 526px;
+    top: 253px;
+    cursor: pointer;
+    color: blueviolet;
+}
